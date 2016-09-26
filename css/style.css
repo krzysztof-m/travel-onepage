@@ -1,0 +1,133 @@
+/*=================================
+\* 0. Reset
+\* 1. Globals
+\* 2. Header
+\* 3. Intro
+\* 4. Countries list
+\* 5. Call to action
+\* 6. Footer
+/*===============================*/
+
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,700';
+
+/*=================================
+\* 0. Reset
+/*===============================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=================================
+\* 1. Globals
+/*===============================*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 5px 0;
+}
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+h2 {
+    font-size: 35px;
+    line-height: 45px;
+}
+.lead {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+/*=================================
+\* 3. Grid
+/*===============================*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col {
+    width: 50%;
+    float: left;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*=================================
+\* 3. Intro
+/*===============================*/
+#intro {
+    background-image: url("../img/bg-intro.png");
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.main-title-wrapper {
+    width: 50%;
+    padding-top: 30vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.city-desc {
+    padding: 50px;
+}
