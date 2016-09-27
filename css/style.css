@@ -73,8 +73,8 @@ table {
 }
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 22px;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
@@ -88,14 +88,36 @@ h2 {
     font-size: 35px;
     line-height: 45px;
 }
+h3 {
+    font-size: 28px;
+    line-height: 35px;
+}
 .lead {
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.5em;
 }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.btn:hover {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
 /*=================================
 \* 3. Grid
 /*===============================*/
+.row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: stretch;
+}
 .row:after {
     content: "";
     display: table;
@@ -111,6 +133,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: 50% 50%;
+    min-height: 400px;
 }
 /*=================================
 \* 3. Intro
@@ -127,7 +151,109 @@ h2 {
     margin: 0 auto;
     text-align: center;
 }
+.main-title {
+    color: #090;
+}
+.btn-main {
+    padding: 10px 30px;
+    color: #090;
+    border: 2px #090 solid;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.btn-main:hover {
+    background-color: #090;
+    color: #fff;
+}
+/*=================================
+\* 3. Cities
+/*===============================*/
+.rome { background-image: url("../img/rome.jpg"); }
+.paris { background-image: url("../img/paris.jpg"); }
+.new-york { background-image: url("../img/new-york.jpg"); }
 
+.city-title {
+    color: #fff;
+    text-shadow: 3px 3px 3px rgba(0,0,0,.8);
+}
 .city-desc {
-    padding: 50px;
+    padding: 100px;
+}
+/*=================================
+\* 3. Subscribe
+/*===============================*/
+#subscribe {
+    background-color: #090;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.subscribe-wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+#subscribe-form {
+    padding: 20px 0;
+}
+.text-field,
+.submit-field {
+    float: left;
+    padding: 0 10px;
+}
+.text-field {
+    width: 70%;
+}
+.submit-field {
+    width: 30%;
+}
+#subscribe-email,
+#subscribe-submit {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+.input-field {
+    padding: 8px;
+    border: none;
+    background-color: rgba(256,256,256,.3);
+    color: #fff;
+}
+.btn-submit {
+    padding: 5px 20px;
+    border: 2px #fff solid;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: #fff;
+    color: #090;
+}
+/*=================================
+\* 6. Footer
+/*===============================*/
+footer {
+    background-color: #494949;
+    color: #fff;
+    padding: 10px 0;
+}
+.credits {
+    text-align: center;
+}
+.credit-item {
+    display: inline-block;
+    padding: 0 7px;
+}
+.credit-item + .credit-item {
+    border-left: 1px #fff solid;
+}
+.credit-link {
+    color: #cce6ff;
+    text-decoration: none;
+}
+.credit-link:hover {
+    color: #99ceff;
 }
