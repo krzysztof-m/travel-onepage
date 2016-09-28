@@ -107,8 +107,11 @@ h3 {
     -o-transition: all .2s linear;
     transition: all .2s linear;
 }
+.link-small {
+    font-size: 0.5em;
+}
 /*=================================
-\* 3. Grid
+\* 2. Grid
 /*===============================*/
 .row {
     display: -webkit-flex;
@@ -143,11 +146,11 @@ h3 {
     background-image: url("../img/bg-intro.png");
     background-attachment: fixed;
     height: 100vh;
+    padding-top: 30vh;
 }
 
 .main-title-wrapper {
     width: 50%;
-    padding-top: 30vh;
     margin: 0 auto;
     text-align: center;
 }
@@ -168,7 +171,7 @@ h3 {
     color: #fff;
 }
 /*=================================
-\* 3. Cities
+\* 4. Cities
 /*===============================*/
 .rome { background-image: url("../img/rome.jpg"); }
 .paris { background-image: url("../img/paris.jpg"); }
@@ -182,7 +185,7 @@ h3 {
     padding: 100px;
 }
 /*=================================
-\* 3. Subscribe
+\* 5. Subscribe
 /*===============================*/
 #subscribe {
     background-color: #090;
@@ -256,4 +259,85 @@ footer {
 }
 .credit-link:hover {
     color: #99ceff;
+}
+/*=================================
+\* 7. Media queries
+/*===============================*/
+@media (min-width: 1500px) {
+    body {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .main-title {
+        font-size: 60px;
+        line-height: 75px;
+    }
+    
+    #subscribe {
+        padding: 100px 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .subscribe-wrapper {
+        width: 75%;
+    }
+    #intro {
+        padding: 50px 0;
+        height: auto;
+    }
+    .main-title-wrapper {
+        width: 75%;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .lead {
+        font-size: 1em;
+    }
+    .main-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row.col-rev {
+        flex-direction: column-reverse;
+    }
+    .col {
+        width: 100%;
+        min-height: 150px;
+    }
+    #intro {
+        padding: 30px 0;
+        height: auto;
+    }
+    .main-title-wrapper {
+        width: 90%;
+    }
+    .city-desc {
+        padding: 40px;
+    }
+    .subscribe-wrapper {
+        width: 90%;
+    }
+    .credit-item {
+        font-size: 12px;
+        line-height: 14px;
+        display: block;
+        margin: 5px 0;
+    }
+    .credit-item + .credit-item {
+        border: none;
+    }
+}
+@media (max-width: 500px) {
+    .text-field,
+    .submit-field {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
